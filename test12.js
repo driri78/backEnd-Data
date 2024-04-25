@@ -3,6 +3,7 @@ const http = require("http");
 
 const server = http.createServer();
 
+// 처리 : 제한된 요청 처리
 server.on("request", (request, response) => {
   console.log(request.url);
   if (request.url === "/") {
